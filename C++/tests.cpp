@@ -12,6 +12,6 @@ int main() {
     bool grid[1000][1000];
     ChangeState(0, 0, 999, 999, grid, true);
     IS_TRUE(*grid[5, 5] == true, "didn't set the state correctly.");
-    IS_TRUE(countLights(grid, true) == 1000000, "Didn't count lights properly.");
+    IS_TRUE(countLights(grid, true) == 1000000, "Didn't count lights properly. Lights: ");
     return 0;
 }
